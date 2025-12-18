@@ -9,7 +9,7 @@
 > -v <u><b>Volumn Name</u></b>:<u><b>Container Path</u></b>  
 > mysql:<u><b>Phiên Bản MySQL</u></b>
 ***
-| Thành phần     | Cú pháp                                                          | Ý nghĩa                                 | Ghi chú thực tế                         |
+| Thành Phần     | Cú Pháp                                                          | Ý Nghĩa                                 | Ghi Chú Thực Tế                         |
 |----------------|------------------------------------------------------------------|-----------------------------------------|-----------------------------------------|
 | Lệnh Chính     | `docker run`                                                     | Tạo Và Chạy Container Mới               | Image Chưa Có Sẽ Tự Pull                |
 | Chạy Nền       | `-d`                                                             | Detached Mode                           | Không Chiếm Terminal                    |
@@ -19,8 +19,8 @@
 | Map Port       | `-p`<u><b>`Host Port`</u></b>`:`<u><b>`Container Port`</u></b>   | Host 3306 → Container 3306              | App Connect `localhost:3306`            |
 | Volume         | `-v`<u><b>`Volumn Name`</u></b>`:`<u><b>`Container Path`</u></b> | Lưu Data Ra Ngoài Container             | Xóa Container Không Mất Data            |
 | Image          | `mysql:`<u><b>`Phiên Bản MySQL`</u></b>                          | Image MySQL version 8.0                 | Nên Pin Version, Tránh `latest`         |
+### Ví Dụ:
 ```bash
-Ví Dụ:
 docker run -d --name learn_nodejs -e MYSQL_ROOT_PASSWORD=16121409 -e MYSQL_DATABASE=nodejs_db -p 3306:3306 -v mysql_data:/var/lib/mysql mysql:8.0
 ```
 ## 02. Xác Minh Container Đang Chạy
@@ -36,8 +36,13 @@ docker ps
 docker exec -it learn_nodejs bash
 ```
 ***
-
-
+| Thành Phần     | Cú Pháp                                                          | Ý Nghĩa                                 | Ghi Chú Thực Tế                         |
+|----------------|------------------------------------------------------------------|-----------------------------------------|-----------------------------------------|
+| Lệnh Chính     | `docker exec`                                                    | Chạy Lệnh Container Đang Chạy           | Container Phải Đang Chạy                |
+| Interactive    | `-i`                                                             | Giữ STDIN Để Nhập Lệnh                  | Bắt Buộc Khi Dùng Shell                 |
+| TTY            | `-t`                                                             | Cấp pseudo-terminal                     | Kết hợp `-i` `-t` → `-it`               |
+| Tên Container  | `learn_nodejs`                                                   | Container Cần Truy Cập                  | Có Thể Dùng Container ID                |
+| Shell          | `bash`                                                           | Mở Bash Shell Trong Container           | Một Số Image Chỉ Có `sh`                |
 
 ## 04. Kết Nối Với Máy Chủ CSDL MySQL
 ## 05. Tạo CSDL trong MySQL
