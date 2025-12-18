@@ -1,14 +1,16 @@
-# 1. Cài MySQL bằng Docker
+# Cài MySQL bằng Docker
+
 ## Create & Run MySQL Container
 
 		```bash
-		docker run -d \
-			--name mysql_learn \
-			-e MYSQL_ROOT_PASSWORD=secret123 \
-			-e MYSQL_DATABASE=learn_db \
-			-p 3306:3306 \
-			-v mysql_data:/var/lib/mysql \
+		docker run -d
+			--name mysql_learn
+			-e MYSQL_ROOT_PASSWORD=secret123
+			-e MYSQL_DATABASE=learn_db
+			-p 3306:3306
+			-v mysql_data:/var/lib/mysql
 			mysql:8.0
+		```
 
 		| Thành phần     | Cú pháp                                 | Ý nghĩa                                 | Ghi chú thực tế                         |
 		|----------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|
