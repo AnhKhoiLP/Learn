@@ -2,8 +2,6 @@
 # I. Cài MySQL Bằng Docker
 <details open><h1>01. Create & Run MySQL Container
 
-## 01. Create & Run MySQL Container
-
 > docker run  
 > -d  
 > --name <u><b>Name</u></b>  
