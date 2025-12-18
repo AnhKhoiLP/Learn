@@ -21,7 +21,7 @@
 | Image          | `mysql:`<u><b>`Phiên Bản MySQL`</u></b>                          | Image MySQL version 8.0                 | Nên Pin Version, Tránh `latest`         |
 ### Ví Dụ:
 ```bash
-docker run -d --name learn_nodejs -e MYSQL_ROOT_PASSWORD=16121409 -e MYSQL_DATABASE=nodejs_db -p 3306:3306 -v mysql_data:/var/lib/mysql mysql:8.0
+docker run -d --name learn_nodejs -e MYSQL_ROOT_PASSWORD=16121409 -e MYSQL_DATABASE=nodejs_db -p 3307:3306 -v mysql_data:/var/lib/mysql mysql:8.0
 ```
 ## 02. Xác Minh Container Đang Chạy
 ```bash
@@ -45,6 +45,9 @@ docker exec -it learn_nodejs bash
 | Shell          | `bash`                                                           | Mở Bash Shell Trong Container           | Một Số Image Chỉ Có `sh`                |
 
 ## 04. Kết Nối Với Máy Chủ CSDL MySQL
+```bash
+psql -h localhost -U postgres
+```
 ## 05. Tạo CSDL trong MySQL
 ## 06. Xác Nhận Việc Tạo CSDL
 ## 07. Kết Nối Với CSDL
