@@ -1,7 +1,5 @@
-
 # I. Cài MySQL Bằng Docker
-<details open><h1>01. Create & Run MySQL Container</h1>
-
+## 01. Create & Run MySQL Container
 > docker run  
 > -d  
 > --name <u><b>Name</u></b>  
@@ -10,7 +8,6 @@
 > -p <u><b>Host Port</u></b>:<u><b>Container Port</u></b>  
 > -v <u><b>Volumn Name</u></b>:<u><b>Container Path</u></b>  
 > mysql:<u><b>Phiên Bản MySQL</u></b>
-
 ***
 | Thành phần     | Cú pháp                                                          | Ý nghĩa                                 | Ghi chú thực tế                         |
 |----------------|------------------------------------------------------------------|-----------------------------------------|-----------------------------------------|
@@ -22,16 +19,10 @@
 | Map Port       | `-p`<u><b>`Host Port`</u></b>`:`<u><b>`Container Port`</u></b>   | Host 3306 → Container 3306              | App Connect `localhost:3306`            |
 | Volume         | `-v`<u><b>`Volumn Name`</u></b>`:`<u><b>`Container Path`</u></b> | Lưu Data Ra Ngoài Container             | Xóa Container Không Mất Data            |
 | Image          | `mysql:`<u><b>`Phiên Bản MySQL`</u></b>                          | Image MySQL version 8.0                 | Nên Pin Version, Tránh `latest`         |
-
 ```bash
 Ví Dụ:
-
 docker run -d --name learn_nodejs -e MYSQL_ROOT_PASSWORD=16121409 -e MYSQL_DATABASE=nodejs_db -p 3306:3306 -v mysql_data:/var/lib/mysql mysql:8.0
 ```
-</details>
-
-<details open>
-
 ## 02. Xác Minh Container Đang Chạy
 ```bash
 docker ps
@@ -40,8 +31,6 @@ docker ps
 | CONTAINER ID  | IMAGE     | COMMAND               | CREATED     | STATUS          | PORTS                                | NAMES             |
 |:-------------:|:---------:|:---------------------:|:-----------:|:---------------:|:------------------------------------:|:-----------------:|
 | 77613d1fd9e3  | mysql:8.0 | "docker-entrypoint.s…"| 6 hours ago | Up 5 seconds    | 0.0.0.0:3306->3306/tcp, 33060/tcp    | learn_nodejs      |
-</details>
-
 ## 03. Tương Tác Với Container Đang Chạy
 ```bash
 docker exec -it learn_nodejs bash
