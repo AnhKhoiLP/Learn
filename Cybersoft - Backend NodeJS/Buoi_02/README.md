@@ -1,5 +1,6 @@
 # 1. Cài MySQL bằng Docker
 ## Create & Run MySQL Container
+
 		```bash
 		docker run -d \
 			--name mysql_learn \
@@ -8,7 +9,7 @@
 			-p 3306:3306 \
 			-v mysql_data:/var/lib/mysql \
 			mysql:8.0
-		```
+
 		| Thành phần     | Cú pháp                                 | Ý nghĩa                                 | Ghi chú thực tế                         |
 		|----------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|
 		| Lệnh Chính     | `docker run`                            | Tạo Và Chạy Container Mới               | Image Chưa Có Sẽ Tự Pull                |
