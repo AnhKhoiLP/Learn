@@ -1,7 +1,5 @@
-<h1>I. Cài MySQL Bằng Docker</h1>
-
-<h2> 01. Create & Run MySQL Container </h2>
-
+# I. Cài MySQL Bằng Docker
+## 01. Create & Run MySQL Container
 > docker run  
 > -d  
 > --name <u><b>Name</u></b>  
