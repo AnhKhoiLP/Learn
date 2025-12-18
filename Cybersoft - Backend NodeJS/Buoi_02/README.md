@@ -55,12 +55,25 @@ docker exec -it learn_nodejs bash
 ```bash
 docker exec -it learn_nodejs mysql -u root -p
 ```
+
+>> Lưu Ý: Từ bước này sẽ thấy mysql>. Từ đây không dùng Ctrl+V để Paste, dùng Right Click Để Paste
 ## 05. Tạo CSDL trong MySQL
 ```sql
 CREATE DATABASE beamin;
 ```
-## 06. Xác Nhận Việc Tạo CSDL
-## 07. Kết Nối Với CSDL
-## 08. Tạo Một Bảng Trong CSDL
+## 06. Xác Nhận Việc Tạo CSDL MySQL
+```sql
+SELECT
+    SCHEMA_NAME AS `Name`,
+    DEFAULT_CHARACTER_SET_NAME AS `Charset`,
+    DEFAULT_COLLATION_NAME AS `Collation`
+FROM information_schema.SCHEMATA;
+```
+## 07. Kết Nối Với CSDL MySQL
+```sql
+USE beamin;
+```
+## 08. Tạo Một Bảng Trong CSDL MySQL
+
 ## 09. Chèn Bản Ghi Vào Bảng MySQL
 ## 10. Lấy Dữ Liệu Từ Bảng
