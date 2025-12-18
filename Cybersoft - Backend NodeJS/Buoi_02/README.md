@@ -1,6 +1,6 @@
 
 # I. Cài MySQL Bằng Docker
-<details open><h1>01. Create & Run MySQL Container
+<details open><h1>01. Create & Run MySQL Container</h1>
 
 > docker run  
 > -d  
@@ -28,7 +28,7 @@ Ví Dụ:
 
 docker run -d --name learn_nodejs -e MYSQL_ROOT_PASSWORD=16121409 -e MYSQL_DATABASE=nodejs_db -p 3306:3306 -v mysql_data:/var/lib/mysql mysql:8.0
 ```
-</h1></details>
+</details>
 
 <details open>
 
