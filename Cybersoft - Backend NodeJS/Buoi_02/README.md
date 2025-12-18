@@ -56,6 +56,9 @@ docker exec -it learn_nodejs bash
 docker exec -it learn_nodejs mysql -u root -p
 ```
 ## 05. Tạo CSDL trong MySQL
+```sql
+CREATE DATABASE beamin;
+```
 ## 06. Xác Nhận Việc Tạo CSDL
 ## 07. Kết Nối Với CSDL
 ## 08. Tạo Một Bảng Trong CSDL
