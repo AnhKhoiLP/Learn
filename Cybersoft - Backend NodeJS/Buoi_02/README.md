@@ -45,8 +45,15 @@ docker exec -it learn_nodejs bash
 | Shell          | `bash`                                                           | Mở Bash Shell Trong Container           | Một Số Image Chỉ Có `sh`                |
 
 ## 04. Kết Nối Với Máy Chủ CSDL MySQL
+> mysql  
+> -h localhost  
+> -P <u><b>Host Port</u></b>  
+> -u <u><b>Tài Khoản</u></b>  
+> -p  
+
+### Ví Dụ:
 ```bash
-psql -h localhost -U postgres
+docker exec -it learn_nodejs mysql -u root -p
 ```
 ## 05. Tạo CSDL trong MySQL
 ## 06. Xác Nhận Việc Tạo CSDL
