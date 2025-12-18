@@ -1,5 +1,5 @@
 # 1. Cài MySQL bằng Docker
-	## Create & Run MySQL Container
+## Create & Run MySQL Container
 		```bash
 		docker run -d \
 			--name mysql_learn \
@@ -19,7 +19,7 @@
 		| Map Port       | `-p 3306:3306`                          | Host 3306 → Container 3306              | App Connect `localhost:3306`            |
 		| Volume         | `-v mysql_data:/var/lib/mysql`          | Lưu Data Ra Ngoài Container             | Xóa Container Không Mất Data            |
 		| Image          | `mysql:8.0`                             | Image MySQL version 8.0                 | Nên Pin Version, Tránh `latest`         |
-		
+
 	--# Xác minh container đang chạy
 	--# Tương tác với container đang chạy
 	--# Kết nối với máy chủ cơ sở dữ liệu PostgreSQL
