@@ -1,10 +1,6 @@
-<style>
-* {
-  font-family: "Courier New", "Quicksand";
-}
-</style>
 
-# Cài MySQL Bằng Docker
+# I. Cài MySQL Bằng Docker
+<details open>
 ## 01. Create & Run MySQL Container
 
 > docker run  
@@ -33,7 +29,9 @@ Ví Dụ:
 
 docker run -d --name learn_nodejs -e MYSQL_ROOT_PASSWORD=16121409 -e MYSQL_DATABASE=nodejs_db -p 3306:3306 -v mysql_data:/var/lib/mysql mysql:8.0
 ```
+</details>
 
+<details open>
 ## 02. Xác Minh Container Đang Chạy
 ```bash
 docker ps
@@ -42,6 +40,8 @@ docker ps
 | CONTAINER ID  | IMAGE     | COMMAND               | CREATED     | STATUS          | PORTS                                | NAMES             |
 |:-------------:|:---------:|:---------------------:|:-----------:|:---------------:|:------------------------------------:|:-----------------:|
 | 77613d1fd9e3  | mysql:8.0 | "docker-entrypoint.s…"| 6 hours ago | Up 5 seconds    | 0.0.0.0:3306->3306/tcp, 33060/tcp    | learn_nodejs      |
+</details>
+
 ## 03. Tương Tác Với Container Đang Chạy
 ```bash
 docker exec -it learn_nodejs bash
