@@ -67,7 +67,7 @@
 			--$ ----+------
 			--$   1 | KHÔI 
 --> Tạo Database
-	CREATE SCHEMA db_beamin;GO
+	CREATE SCHEMA db_beamin; GO
 --> Tạo Table db_beamin.users
 	CREATE TABLE db_beamin.users
 	(

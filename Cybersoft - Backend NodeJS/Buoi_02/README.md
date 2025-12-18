@@ -1,4 +1,4 @@
-# I. Cài MySQL Bằng Docker
+# I. Cài MySQL Bằng Docker Sử Dụng PowerShell
 ## 01. Create & Run MySQL Container
 > docker run  
 > -d  
