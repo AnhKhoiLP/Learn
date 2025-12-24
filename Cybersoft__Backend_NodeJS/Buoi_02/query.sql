@@ -52,7 +52,7 @@
 		--| Sau khi chạy lệnh này, bạn sẽ kết nối thành công với cơ sở dữ liệu tsl_employee.
 		--| Khi kết nối thành công, PostgreSQL sẽ hiển thị một thông báo như sau:
 			--$ You are now connected to database "beamin" as user "postgres".
-	--# Tạo một bảng trong cơ sở dữ liệu
+	--# Tạo một bảng trong cơ sở dữ liệu PostgreSQL
 		--| Để tạo một bảng mới trong cơ sở dữ liệu đã chọn, bạn sử dụng lệnh sau:\
 		--| CREATE TABLE test_database(ID INT PRIMARY KEY NOT NULL, NAME TEXT NOT NULL) [NHỚ DẤU ';']
 			--$ CREATE TABLE

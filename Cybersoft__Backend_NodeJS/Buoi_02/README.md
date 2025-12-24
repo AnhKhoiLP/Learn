@@ -74,6 +74,15 @@ FROM information_schema.SCHEMATA;
 USE beamin;
 ```
 ## 08. Tạo Một Bảng Trong CSDL MySQL
-
+```sql
+CREATE TABLE test_database (
+    id   INT PRIMARY KEY NOT NULL,
+    name VARCHAR(255) NOT NULL
+);
+```
+```sql
+DESCRIBE test_database;
+```
 ## 09. Chèn Bản Ghi Vào Bảng MySQL
+
 ## 10. Lấy Dữ Liệu Từ Bảng
